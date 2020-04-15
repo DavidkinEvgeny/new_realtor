@@ -11,6 +11,14 @@
     {% block link_css %}{% endblock link_css %}
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="{% url 'home' %}">Главная</a></li>
+        <li><a href="{% url 'contact' %}">Контакты</a></li>
+        <li><a href="{% url 'blog_list' %}">Блог</a></li>
+    </ul>
+    
+</nav>
 
 {% block content %}
 {% endblock content %}

@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% load static %}
+
+
+{% block title %}Блог - {{ post.title }}{% endblock title %}
+
+
+{% block link_css %}<link rel="stylesheet" href="{% static 'css/post.css' %}">{% endblock link_css %}
+
+
+{% block content %}
+
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+
+{% endblock content %}
